@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Esfera.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Esfera.h" />
     <ClInclude Include="src\Mundo.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
