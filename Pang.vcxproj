@@ -19,13 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Bonus.cpp" />
+    <ClCompile Include="src\Caja.cpp" />
+    <ClCompile Include="src\Disparo.cpp" />
     <ClCompile Include="src\Esfera.cpp" />
+    <ClCompile Include="src\Hombre.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Pared.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Bonus.h" />
+    <ClInclude Include="src\Caja.h" />
+    <ClInclude Include="src\Disparo.h" />
     <ClInclude Include="src\Esfera.h" />
+    <ClInclude Include="src\Hombre.h" />
     <ClInclude Include="src\Mundo.h" />
+    <ClInclude Include="src\Pared.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
