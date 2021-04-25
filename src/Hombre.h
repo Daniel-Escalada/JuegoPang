@@ -9,4 +9,9 @@ public:
 	float altura;
 	Vector2D posicion, velocidad, aceleracion;
 };
-
+Hombre::Hombre()
+{
+	
+	altura = 1.8f;
+	aceleracion.y = aceleracion.x = velocidad.y = 0;
+}
