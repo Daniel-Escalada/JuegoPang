@@ -2,6 +2,8 @@
 class Mundo
 {
 public: 
+
+
 	void tecla(unsigned char key);
 	void inicializa();
 	void rotarOjo();

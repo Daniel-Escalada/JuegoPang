@@ -3,6 +3,9 @@
 class Bonus
 {
 public:
+	Bonus();
+	virtual ~Bonus();
+
 	float lado;
 	Vector2D posicion, velocidad, aceleracion;
 };
