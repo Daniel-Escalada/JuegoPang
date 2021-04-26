@@ -1,6 +1,11 @@
 #include "Bonus.h"
 #include "freeglut.h"
 
+Bonus::Bonus()
+{
+	
+}
+
 void Bonus::dibuja() {
 	glPushMatrix();
 	glTranslatef(posicion.x, posicion.y, 0);

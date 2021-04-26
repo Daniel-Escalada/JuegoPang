@@ -1,8 +1,19 @@
+#include "Caja.h"
+#include "Hombre.h"
+#include "Esfera.h"
+#include "Bonus.h"
+#include "Disparo.h"
 
 class Mundo
 {
 public: 
 
+	Disparo disparo;
+	Esfera esfera;
+	Hombre hombre;
+	Caja caja;
+	Bonus bonus;
+	Pared plataforma;
 
 	void tecla(unsigned char key);
 	void inicializa();
