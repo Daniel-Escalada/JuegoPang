@@ -23,7 +23,7 @@ void Mundo::dibuja()
 	disparo.dibuja();
 	plataforma.dibuja();
 	bonus.dibuja();
-	estela.dibuja();
+	
 }
 
 void Mundo::mueve()
@@ -49,6 +49,7 @@ void Mundo::inicializa()
 
 	disparo.posicion.x = disparo.origen.x;
 	disparo.posicion.y = disparo.origen.y;
+	
 
 	bonus.posicion.x = -5.0f;
 	bonus.posicion.y = 5.0f;
@@ -58,6 +59,7 @@ void Mundo::inicializa()
 	plataforma.limite1.y = 9.0f;
 	plataforma.limite2.y = 9.0f;
 
+	
 }
 
 void Mundo::tecla(unsigned char key)

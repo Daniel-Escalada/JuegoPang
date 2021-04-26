@@ -8,7 +8,7 @@ class Mundo
 {
 public: 
 
-	Disparo disparo,estela;
+	Disparo disparo;
 	Esfera esfera;
 	Hombre hombre;
 	Caja caja;

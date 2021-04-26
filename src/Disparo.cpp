@@ -27,10 +27,13 @@ void Disparo::dibuja() {
 	
 	glPushMatrix();
 
+	
 	estela.limite1.x = origen.x;
 	estela.limite1.y = origen.y;
 	estela.limite2.x = posicion.x;
 	estela.limite2.y = posicion.y;
+	estela.rojo = 0;
+	estela.verde = estela.azul = 255;
 	
 	estela.dibuja();
 
