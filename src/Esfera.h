@@ -4,7 +4,7 @@ class Esfera
 {
 public:
 	Esfera();
-	virtual ~Esfera();
+	
 
 	float radio;
 	unsigned char rojo, verde, azul;
@@ -13,9 +13,4 @@ public:
 	void dibuja();
 	void mueve(float t);
 };
-Esfera::Esfera()
-{
-	rojo = verde = azul = 255; //blanco
-	radio = 1.0f;
-	aceleracion.y = -9.8f;
-}
+

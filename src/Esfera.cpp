@@ -1,6 +1,13 @@
 #include "Esfera.h"
 #include "freeglut.h"
 
+Esfera::Esfera()
+{
+	rojo = verde = azul = 255; //blanco
+	radio = 1.0f;
+	aceleracion.y = -9.8f;
+}
+
 void Esfera::dibuja() {
 
 	glColor3ub(rojo, verde, azul);

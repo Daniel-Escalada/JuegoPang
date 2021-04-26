@@ -1,6 +1,14 @@
 #include "Disparo.h"
 #include "freeglut.h"
 
+Disparo::Disparo()
+{
+	velocidad.x = 0;
+	radio = 0.25f;
+	aceleracion.y = aceleracion.x = 0;
+}
+
+
 void Disparo::dibuja() {
 
 	glColor3f(0.0f, 1.0f, 1.0f);

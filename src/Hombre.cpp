@@ -1,6 +1,12 @@
 #include "Hombre.h"
 #include "freeglut.h"
 
+Hombre::Hombre()
+{
+	altura = 1.8f;
+	aceleracion.y = aceleracion.x = velocidad.y = 0;
+}
+
 void Hombre::dibuja() {
 
 	glPushMatrix();
