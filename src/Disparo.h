@@ -7,6 +7,7 @@ public:
 	
 
 	float radio;
+	Vector2D origen;
     Vector2D posicion, velocidad, aceleracion;
 
 	void dibuja();

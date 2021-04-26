@@ -6,6 +6,9 @@ Disparo::Disparo()
 	velocidad.x = 0;
 	radio = 0.25f;
 	aceleracion.y = aceleracion.x = 0;
+	velocidad.y = 10.0f;
+	origen.x = 5.0f;
+	origen.y = 0;
 }
 
 

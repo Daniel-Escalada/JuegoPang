@@ -46,11 +46,11 @@ void Mundo::inicializa()
 	esfera.verde = 0;
 	esfera.azul = 255;
 	
-	bonus.posicion.x = 5.0f;
-	bonus.posicion.y = 5.0f;
+	disparo.posicion.x = disparo.origen.x;
+	disparo.posicion.y = disparo.origen.y;
 	
-	disparo.posicion.x = -5.0f;
-	disparo.posicion.y = 0.0f;
+	bonus.posicion.x = -5.0f;
+	bonus.posicion.y = 5.0f;
 	
 	plataforma.limite1.x = -5.0f;
 	plataforma.limite2.x = 5.0f;
