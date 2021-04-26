@@ -8,6 +8,23 @@ Esfera::Esfera()
 	aceleracion.y = -9.8f;
 }
 
+void Esfera::setRadio(float r)
+{
+	if (r < 0.1f) r = 0.1f;
+	radio = r;
+}
+void Esfera::setColor(unsigned char r, unsigned char v, unsigned char a)
+{
+	rojo = r;
+	verde = v;
+	azul = a;
+}
+void Esfera::setPos(float ix, float iy)
+{
+	posicion.x = ix;
+	posicion.y = iy;
+}
+
 void Esfera::dibuja() {
 
 	glColor3ub(rojo, verde, azul);

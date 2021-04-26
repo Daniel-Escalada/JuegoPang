@@ -40,12 +40,9 @@ void Mundo::inicializa()
 	y_ojo = 7.5;
 	z_ojo = 30;
 
-	esfera.posicion.x = 2;
-	esfera.posicion.y = 4;
-	esfera.radio = 1.5f;
-	esfera.rojo = 0;
-	esfera.verde = 0;
-	esfera.azul = 255;
+	esfera.setColor(0, 0, 255);
+	esfera.setRadio(1.5f);
+	esfera.setPos(2, 4);
 
 	disparo.posicion.x = disparo.origen.x;
 	disparo.posicion.y = disparo.origen.y;
