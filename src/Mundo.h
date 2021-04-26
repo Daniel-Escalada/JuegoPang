@@ -8,12 +8,13 @@ class Mundo
 {
 public: 
 
-	Disparo disparo;
+	Disparo disparo,estela;
 	Esfera esfera;
 	Hombre hombre;
 	Caja caja;
 	Bonus bonus;
 	Pared plataforma;
+	
 
 	void tecla(unsigned char key);
 	void inicializa();

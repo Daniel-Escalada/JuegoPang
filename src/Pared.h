@@ -7,7 +7,7 @@ public:
 	
 
 	unsigned char rojo, verde, azul;
-	Vector2D limite1, limite2;
+	Vector2D limite1, limite2, limite3;
 
 	void dibuja();
 };

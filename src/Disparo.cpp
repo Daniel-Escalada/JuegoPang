@@ -1,6 +1,7 @@
 #include "Disparo.h"
 #include "freeglut.h"
 
+
 Disparo::Disparo()
 {
 	velocidad.x = 0;
@@ -9,6 +10,8 @@ Disparo::Disparo()
 	velocidad.y = 10.0f;
 	origen.x = 5.0f;
 	origen.y = 0;
+	estela.limite3.x = 0.1f;
+	estela.limite3.y = -0.1f;
 }
 
 
@@ -19,6 +22,21 @@ void Disparo::dibuja() {
 	glTranslatef(posicion.x, posicion.y, 0);
 	glutSolidSphere(radio, 20, 20);
 	glPopMatrix();
+
+	//estela
+	
+	glPushMatrix();
+
+	estela.limite1.x = origen.x;
+	estela.limite1.y = origen.y;
+	estela.limite2.x = posicion.x;
+	estela.limite2.y = posicion.y;
+	
+	estela.dibuja();
+
+	
+	glPopMatrix();
+	//fin estela
 }
 
 void Disparo::mueve(float t) {
