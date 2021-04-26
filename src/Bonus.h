@@ -8,5 +8,8 @@ public:
 
 	float lado;
 	Vector2D posicion, velocidad, aceleracion;
+
+	void dibuja();
+	void mueve(float t);
 };
 

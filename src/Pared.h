@@ -8,6 +8,8 @@ public:
 
 	unsigned char rojo, verde, azul;
 	Vector2D limite1, limite2;
+
+	void dibuja();
 };
 Pared::Pared()
 {

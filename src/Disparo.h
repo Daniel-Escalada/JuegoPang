@@ -8,6 +8,9 @@ public:
 
 	float radio;
     Vector2D posicion, velocidad, aceleracion;
+
+	void dibuja();
+	void mueve(float t);
 };
 Disparo::Disparo()
 {

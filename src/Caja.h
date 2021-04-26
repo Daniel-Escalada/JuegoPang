@@ -8,6 +8,8 @@ public:
 	virtual ~Caja();
 
 	Pared suelo, techo, pared_dcha, pared_izq;
+
+	void dibuja();
 };
 Caja::Caja()
 {
