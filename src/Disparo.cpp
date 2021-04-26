@@ -12,11 +12,9 @@ Disparo::Disparo()
 	origen.y = 0;
 	estela.limite3.x = 0.1f;
 	estela.limite3.y = -0.1f;
-	estela.rojo = 0;
-	estela.verde = estela.azul = 255;
+	estela.setColor(0, 255, 255);
+
 }
-
-
 void Disparo::dibuja() {
 
 	glColor3f(0.0f, 1.0f, 1.0f);

@@ -9,6 +9,12 @@ Pared::Pared()
 	limite3.y = -10;
 }
 
+void Pared::setColor(unsigned char r, unsigned char v, unsigned char a)
+{
+	rojo = r;
+	verde = v;
+	azul = a;
+}
 
 void Pared::dibuja() {
 
