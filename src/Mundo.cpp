@@ -40,6 +40,7 @@ void Mundo::mueve()
 	Interaccion::rebote(esfera, plataforma);
 	Interaccion::rebote(esfera2, caja);
 	Interaccion::rebote(esfera2, plataforma);
+	Interaccion::rebote(esfera, esfera2);
 
 }
 

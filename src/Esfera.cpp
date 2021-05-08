@@ -1,6 +1,7 @@
 #include "Esfera.h"
 #include "freeglut.h"
 #include "ColorRGB.h"
+#include <math.h>
 
 Esfera::Esfera()
 {
@@ -45,3 +46,11 @@ void Esfera::setVel(float vx, float vy)
 	velocidad.x = vx;
 	velocidad.y = vy;
 }
+/*
+bool Esfera::colision()
+{
+	float dist = (float)sqrt(pow(esfera.posicion.x - esfera2.posicion.x) + pow(esfera.posicion.y - esfera2.posicion.y));
+	if (dist <= (esfera.radio + esfera2.radio)) return true;
+	else return false;
+}
+*/

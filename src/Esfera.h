@@ -23,6 +23,7 @@ public:
 
 	void dibuja();
 	void mueve(float t);
+	//bool colision();
 
 private:
 
