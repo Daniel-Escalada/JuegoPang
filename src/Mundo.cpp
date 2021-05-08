@@ -34,6 +34,7 @@ void Mundo::mueve()
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
 	Interaccion::rebote(hombre, caja);
+	Interaccion::rebote(esfera, caja);
 }
 
 void Mundo::inicializa()

@@ -7,7 +7,7 @@
 class Esfera
 {
 
-
+	friend class Interaccion;
 
 public:
 

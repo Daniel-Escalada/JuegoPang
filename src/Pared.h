@@ -11,6 +11,7 @@ public:
 	void setColor(unsigned char r, unsigned char v, unsigned char a);
 	void dibuja();
 	void setPos(float x1, float y1, float x2, float y2, float z1, float z2);
+	float distancia(Vector2D punto, Vector2D* direccion = 0);
 
 private:
 	ColorRGB color;
