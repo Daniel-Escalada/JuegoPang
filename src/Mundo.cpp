@@ -19,6 +19,7 @@ void Mundo::dibuja()
 
 	//aqui es donde hay que poner el codigo de dibujo
 	esfera.dibuja();
+	esfera2.dibuja();
 	caja.dibuja();
 	hombre.dibuja();
 	disparo.dibuja();
@@ -31,11 +32,14 @@ void Mundo::mueve()
 {
 	hombre.mueve(0.025f);
 	esfera.mueve(0.025f);
+	esfera2.mueve(0.025f);
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(esfera, plataforma);
+	Interaccion::rebote(esfera2, caja);
+	Interaccion::rebote(esfera2, plataforma);
 
 }
 
@@ -48,6 +52,9 @@ void Mundo::inicializa()
 	esfera.setRadio(1.5f);
 	esfera.setPos(2, 4);
 	esfera.setVel(5,15);
+	esfera2.setRadio(2);
+	esfera2.setPos(-2, 4);
+	esfera2.setVel(-5, 15);
 	bonus.setPos(5.0f, 5.0f);
 	disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);

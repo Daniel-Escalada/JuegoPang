@@ -21,7 +21,7 @@ public:
 	
 private:
 	Disparo disparo;
-	Esfera esfera;
+	Esfera esfera,esfera2;
 	Hombre hombre;
 	Caja caja;
 	Bonus bonus;
