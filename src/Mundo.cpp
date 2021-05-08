@@ -35,6 +35,8 @@ void Mundo::mueve()
 	disparo.mueve(0.025f);
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
+	Interaccion::rebote(esfera, plataforma);
+
 }
 
 void Mundo::inicializa()
@@ -45,6 +47,7 @@ void Mundo::inicializa()
 	esfera.setColor(0, 0, 255);
 	esfera.setRadio(1.5f);
 	esfera.setPos(2, 4);
+	esfera.setVel(5,15);
 	bonus.setPos(5.0f, 5.0f);
 	disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);

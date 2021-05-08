@@ -39,3 +39,9 @@ void Esfera::mueve(float t) {
 	velocidad = velocidad + aceleracion * t;
 
 }
+
+void Esfera::setVel(float vx, float vy)
+{
+	velocidad.x = vx;
+	velocidad.y = vy;
+}

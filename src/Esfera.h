@@ -19,7 +19,7 @@ public:
 	void setRadio(float r);
 	// Posicion x e y
 	void setPos(float ix, float iy);
-
+	void setVel(float vx, float vy);
 
 	void dibuja();
 	void mueve(float t);
