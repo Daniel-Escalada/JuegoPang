@@ -13,6 +13,7 @@ public:
 	void rotarOjo();
 	void mueve();
 	void dibuja();
+	void teclaEspecial(unsigned char key);
 
 	float x_ojo;
 	float y_ojo;

@@ -8,7 +8,8 @@ Mundo mundo;
 //NO HACE FALTA LLAMARLAS EXPLICITAMENTE
 void OnDraw(void); //esta funcion sera llamada para dibujar
 void OnTimer(int value); //esta funcion sera llamada cuando transcurra una temporizacion
-void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla	
+void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla
+void onSpecialKeyboardDown(int key, int x, int y);
 
 int main(int argc,char* argv[])
 {
@@ -31,6 +32,8 @@ int main(int argc,char* argv[])
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);//le decimos que dentro de 25ms llame 1 vez a la funcion OnTimer()
 	glutKeyboardFunc(OnKeyboardDown);
+	glutSpecialFunc(onSpecialKeyboardDown); //gestion de los cursores
+	
 
 	mundo.inicializa();
 		
@@ -70,4 +73,9 @@ void OnTimer(int value)
 	//no borrar estas lineas
 	glutTimerFunc(25,OnTimer,0);
 	glutPostRedisplay();
+}
+
+void onSpecialKeyboardDown(int key, int x, int y)
+{
+	mundo.teclaEspecial(key);
 }
