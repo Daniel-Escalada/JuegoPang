@@ -3,6 +3,7 @@
 
 class Caja
 {
+	friend class Interaccion;
 public:
 	Caja();
 	void dibuja();

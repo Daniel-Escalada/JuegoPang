@@ -3,7 +3,7 @@
 #include "ColorRGB.h"
 class Pared
 {
-
+	friend class Interaccion;
 public:
 	Pared();
 	

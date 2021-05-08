@@ -1,4 +1,5 @@
 #include "Mundo.h"
+#include "Interaccion.h"
 #include "freeglut.h"
 #include <math.h>
 
@@ -32,6 +33,7 @@ void Mundo::mueve()
 	esfera.mueve(0.025f);
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
+	Interaccion::rebote(hombre, caja);
 }
 
 void Mundo::inicializa()

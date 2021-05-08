@@ -2,6 +2,7 @@
 #include "Vector2D.h"
 class Hombre
 {
+	friend class Interaccion;
 public:
 	Hombre();
 	void dibuja();
