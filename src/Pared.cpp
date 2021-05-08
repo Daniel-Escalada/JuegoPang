@@ -8,9 +8,7 @@ Pared::Pared()
 	limite1.x = limite2.x = limite1.y = limite2.y = 0;
 	limite3.x = 10;
 	limite3.y = -10;
-	//limite3.x = 0.1f;
-	//limite3.y = -0.1f;
-
+	
 }
 
 void Pared::setColor(unsigned char r, unsigned char v, unsigned char a)

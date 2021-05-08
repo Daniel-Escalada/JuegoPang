@@ -10,8 +10,6 @@ Disparo::Disparo()
 	velocidad.y = 10.0f;
 	origen.x = 5.0f;
 	origen.y = 0;
-	//estela.limite3.x = 0.1f;
-	//estela.limite3.y = -0.1f;
 	estela.setColor(0, 255, 255);
 
 }

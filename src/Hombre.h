@@ -6,6 +6,7 @@ public:
 	Hombre();
 	void dibuja();
 	void mueve(float t);
+	void setVel(float vx, float vy);
 	
 private:
 	float altura;
