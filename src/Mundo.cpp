@@ -39,22 +39,12 @@ void Mundo::inicializa()
 	x_ojo = 0;
 	y_ojo = 7.5;
 	z_ojo = 30;
-
 	esfera.setColor(0, 0, 255);
 	esfera.setRadio(1.5f);
 	esfera.setPos(2, 4);
-
-	disparo.posicion.x = disparo.origen.x;
-	disparo.posicion.y = disparo.origen.y;
-	
-
-	bonus.posicion.x = -5.0f;
-	bonus.posicion.y = 5.0f;
-
-	plataforma.limite1.x = -5.0f;
-	plataforma.limite2.x = 5.0f;
-	plataforma.limite1.y = 9.0f;
-	plataforma.limite2.y = 9.0f;
+	bonus.setPos(5.0f, 5.0f);
+	disparo.setPos(-5.0f, 0.0f);
+	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);
 
 	
 }

@@ -10,8 +10,8 @@ Disparo::Disparo()
 	velocidad.y = 10.0f;
 	origen.x = 5.0f;
 	origen.y = 0;
-	estela.limite3.x = 0.1f;
-	estela.limite3.y = -0.1f;
+	//estela.limite3.x = 0.1f;
+	//estela.limite3.y = -0.1f;
 	estela.setColor(0, 255, 255);
 
 }
@@ -27,10 +27,9 @@ void Disparo::dibuja() {
 	
 	glPushMatrix();
 
-	estela.limite1.x = origen.x;
-	estela.limite1.y = origen.y;
-	estela.limite2.x = posicion.x;
-	estela.limite2.y = posicion.y;
+
+	estela.setPos(origen.x, origen.y,posicion.x,posicion.y, 0.1f, -0.1f);
+
 	
 	estela.dibuja();
 
@@ -45,4 +44,10 @@ void Disparo::mueve(float t) {
 	velocidad.x = velocidad.x + aceleracion.x * t;
 	velocidad.y = velocidad.y + aceleracion.y * t;
 
+}
+
+void Disparo::setPos(float ix, float iy) {
+	posicion.x = origen.x = ix;
+	posicion.y = origen.y = iy;
+	
 }

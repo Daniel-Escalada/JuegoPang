@@ -17,6 +17,11 @@ void Bonus::dibuja() {
 	glPopMatrix();
 }
 
+void Bonus::setPos(float ix, float iy) {
+	posicion.x = ix;
+	posicion.y = iy;
+}
+
 void Bonus::mueve(float t) {
 
 	posicion.x = posicion.x + velocidad.x * t + 0.5f * aceleracion.x * t * t;

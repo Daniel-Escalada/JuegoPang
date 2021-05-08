@@ -7,6 +7,8 @@ public:
 	Disparo();
 	void dibuja();
 	void mueve(float t);
+	void setPos(float ix, float iy);
+
 	
 private:
 	float radio;
