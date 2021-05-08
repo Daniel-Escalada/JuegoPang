@@ -48,3 +48,11 @@ float Vector2D::operator *(Vector2D v)
 {
 	return (x * v.x) + (y * v.y);
 }
+
+Vector2D Vector2D::operator *(float f)
+{
+	Vector2D ret;
+	ret.x = x * f;
+	ret.y = y * f;
+	return ret;
+}
