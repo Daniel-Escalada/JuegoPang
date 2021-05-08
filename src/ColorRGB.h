@@ -1,4 +1,5 @@
 #pragma once
+
 #include "freeglut.h"
 typedef unsigned char Byte;
 struct ColorRGB
@@ -14,3 +15,4 @@ struct ColorRGB
 	};
 	Byte r, g, b;
 };
+

@@ -1,9 +1,10 @@
 #pragma once
 #include "Vector2D.h"
+#include "ColorRGB.h"
 class Pared
 {
 private:
-	unsigned char rojo, verde, azul;
+	ColorRGB color;
 public:
 	Pared();
 	

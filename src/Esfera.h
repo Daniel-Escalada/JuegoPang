@@ -1,12 +1,16 @@
 #pragma once
+
 #include "Vector2D.h"
+#include "ColorRGB.h"
+
+
 class Esfera
 {
 
 private:
 
 	float radio;
-	unsigned char rojo, verde, azul;
+	ColorRGB color;
 	Vector2D posicion, velocidad, aceleracion;
 
 public:

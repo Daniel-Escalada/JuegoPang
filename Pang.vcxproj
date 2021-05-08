@@ -30,9 +30,9 @@
     <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ColorRGB.h" />
     <ClInclude Include="src\Bonus.h" />
     <ClInclude Include="src\Caja.h" />
+    <ClInclude Include="src\ColorRGB.h" />
     <ClInclude Include="src\Disparo.h" />
     <ClInclude Include="src\Esfera.h" />
     <ClInclude Include="src\Hombre.h" />
