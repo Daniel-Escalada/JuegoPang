@@ -5,10 +5,11 @@ class Caja
 {
 public:
 	Caja();
+	void dibuja();
 
-
+private:
 	Pared suelo, techo, pared_dcha, pared_izq;
 
-	void dibuja();
+
 };
 

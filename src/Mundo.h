@@ -8,14 +8,6 @@ class Mundo
 {
 public: 
 
-	Disparo disparo;
-	Esfera esfera;
-	Hombre hombre;
-	Caja caja;
-	Bonus bonus;
-	Pared plataforma;
-	
-
 	void tecla(unsigned char key);
 	void inicializa();
 	void rotarOjo();
@@ -25,4 +17,12 @@ public:
 	float x_ojo;
 	float y_ojo;
 	float z_ojo;
+	
+private:
+	Disparo disparo;
+	Esfera esfera;
+	Hombre hombre;
+	Caja caja;
+	Bonus bonus;
+	Pared plataforma;
 };

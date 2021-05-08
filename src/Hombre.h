@@ -4,13 +4,14 @@ class Hombre
 {
 public:
 	Hombre();
+	void dibuja();
+	void mueve(float t);
 	
-
+private:
 	float altura;
 	Vector2D posicion, velocidad, aceleracion;
 
-	void dibuja();
-	void mueve(float t);
+
 };
 
 

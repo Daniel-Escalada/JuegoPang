@@ -7,11 +7,7 @@
 class Esfera
 {
 
-private:
 
-	float radio;
-	ColorRGB color;
-	Vector2D posicion, velocidad, aceleracion;
 
 public:
 
@@ -27,5 +23,11 @@ public:
 
 	void dibuja();
 	void mueve(float t);
+
+private:
+
+	float radio;
+	ColorRGB color;
+	Vector2D posicion, velocidad, aceleracion;
 };
 

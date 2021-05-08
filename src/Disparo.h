@@ -5,13 +5,14 @@ class Disparo
 {
 public:
 	Disparo();
+	void dibuja();
+	void mueve(float t);
 	
-
+private:
 	float radio;
 	Vector2D origen;
     Vector2D posicion, velocidad, aceleracion;
 	Pared estela;
 
-	void dibuja();
-	void mueve(float t);
+
 };

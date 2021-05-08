@@ -1,9 +1,10 @@
 #include "Esfera.h"
 #include "freeglut.h"
+#include "ColorRGB.h"
 
 Esfera::Esfera()
 {
-	rojo = verde = azul = 255; //blanco
+	
 	radio = 1.0f;
 	aceleracion.y = -9.8f;
 }
@@ -15,9 +16,7 @@ void Esfera::setRadio(float r)
 }
 void Esfera::setColor(unsigned char r, unsigned char v, unsigned char a)
 {
-	rojo = r;
-	verde = v;
-	azul = a;
+	color.set(r,v,a);
 }
 void Esfera::setPos(float ix, float iy)
 {
@@ -27,7 +26,7 @@ void Esfera::setPos(float ix, float iy)
 
 void Esfera::dibuja() {
 
-	glColor3ub(rojo, verde, azul);
+	color.ponColor();
 	glTranslatef(posicion.x, posicion.y, 0);
 	glutSolidSphere(radio, 20, 20);
 	glTranslatef(-posicion.x, -posicion.y, 0);
