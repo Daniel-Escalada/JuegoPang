@@ -47,5 +47,5 @@ void Interaccion::rebote(Esfera& e1, Esfera& e2)
 		e1.velocidad.y = (v_inicial1.y * ((area1 - area2) / (area1 + area2))) + (v_inicial2.y * ((2 * area2) / (area1 + area2)));
 		e2.velocidad.y = (v_inicial1.y * ((2 * area1) / (area1 + area2))) + (v_inicial2.y * ((area2 - area1) / (area1 + area2)));
 	}
-    
+
 }

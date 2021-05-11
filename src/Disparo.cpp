@@ -9,7 +9,7 @@ Disparo::Disparo()
 	aceleracion.y = aceleracion.x = 0;
 	velocidad.y = 10.0f;
 	origen.x = 5.0f;
-	origen.y = 0;
+	origen.y = 0.3;
 	estela.setColor(0, 255, 255);
 
 }
