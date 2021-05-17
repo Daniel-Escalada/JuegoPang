@@ -25,7 +25,7 @@ void Mundo::dibuja()
 	disparo.dibuja();
 	plataforma.dibuja();
 	bonus.dibuja();
-	
+	esferas.dibuja();
 }
 
 void Mundo::mueve()
@@ -35,6 +35,7 @@ void Mundo::mueve()
 	esfera2.mueve(0.025f);
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
+	esferas.mueve(0.025f);
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(esfera, plataforma);

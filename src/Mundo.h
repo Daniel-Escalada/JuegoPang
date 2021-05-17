@@ -3,6 +3,7 @@
 #include "Esfera.h"
 #include "Bonus.h"
 #include "Disparo.h"
+#include "ListaEsferas.h"
 
 class Mundo
 {
@@ -26,4 +27,5 @@ private:
 	Caja caja;
 	Bonus bonus;
 	Pared plataforma;
+	ListaEsferas esferas;
 };
