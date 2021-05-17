@@ -1,6 +1,8 @@
 #pragma once
 #include "Esfera.h"
 #include "Caja.h"
+#include "Pared.h"
+
 #define MAX_ESFERAS 100
 class ListaEsferas
 {
@@ -11,6 +13,7 @@ public:
 	void dibuja();
 	void mueve(float t);
 	void rebote(Caja caja);
+	void rebote(Pared p);
 
 private:
 	Esfera* lista[MAX_ESFERAS];

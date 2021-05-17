@@ -31,3 +31,8 @@ void ListaEsferas::rebote(Caja caja)
 	for (int i = 0; i < numero; i++)
 		Interaccion::rebote(*(lista[i]), caja);
 }
+void ListaEsferas::rebote(Pared p)
+{
+	for (int i = 0; i < numero; i++)
+		Interaccion::rebote(*(lista[i]), p);
+}

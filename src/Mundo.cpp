@@ -37,6 +37,7 @@ void Mundo::mueve()
 	disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
 	esferas.rebote(caja);
+	esferas.rebote(plataforma);
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(esfera, plataforma);
