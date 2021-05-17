@@ -1,4 +1,5 @@
 #include "ListaEsferas.h"
+#include "Interaccion.h" 
 
 ListaEsferas::ListaEsferas()
 {
@@ -23,4 +24,10 @@ void ListaEsferas::mueve(float t)
 {
 	for (int i = 0; i < numero; i++)
 		lista[i]->mueve(t);
+}
+
+void ListaEsferas::rebote(Caja caja)
+{
+	for (int i = 0; i < numero; i++)
+		Interaccion::rebote(*(lista[i]), caja);
 }

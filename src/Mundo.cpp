@@ -36,12 +36,14 @@ void Mundo::mueve()
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
+	esferas.rebote(caja);
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(esfera, plataforma);
 	Interaccion::rebote(esfera2, caja);
 	Interaccion::rebote(esfera2, plataforma);
 	Interaccion::rebote(esfera, esfera2);
+
 
 }
 
