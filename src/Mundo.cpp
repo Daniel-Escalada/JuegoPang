@@ -61,7 +61,13 @@ void Mundo::inicializa()
 	disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);
 
-	
+
+	for (int i = 0; i < 6; i++)
+	{
+		Esfera* aux = new Esfera(0.75 + i * 0.25, i, 1 + i, i, i);
+		esferas.agregar(aux);
+	}
+
 }
 
 void Mundo::tecla(unsigned char key)

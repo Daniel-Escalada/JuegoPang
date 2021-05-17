@@ -5,7 +5,7 @@ class ListaEsferas
 {
 public:
 	ListaEsferas();
-	virtual ~ListaEsferas();
+	//virtual ~ListaEsferas();
 	bool agregar(Esfera* e);
 	void dibuja();
 	void mueve(float t);

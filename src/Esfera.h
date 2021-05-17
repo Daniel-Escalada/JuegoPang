@@ -10,8 +10,8 @@ class Esfera
 	friend class Interaccion;
 
 public:
-
 	Esfera();
+	Esfera(float rad, float x = 0.0f, float y = 0.0f,float vx = 0.0f, float vy = 0.0f);
 	
 	// Modificar color esfera
 	void setColor(unsigned char r, unsigned char v, unsigned char a);

@@ -5,9 +5,19 @@
 
 Esfera::Esfera()
 {
-	
+
 	radio = 1.0f;
 	aceleracion.y = -9.8f;
+}
+
+Esfera::Esfera(float rad, float x, float y, float vx, float vy)
+{
+	radio = rad;
+	posicion.x = x;
+	posicion.y = y;
+	velocidad.x = vx;
+	velocidad.y = vy;
+	aceleracion.y = -9.8;
 }
 
 void Esfera::setRadio(float r)
