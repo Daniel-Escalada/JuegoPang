@@ -26,7 +26,8 @@ void Mundo::dibuja()
 	plataforma.dibuja();
 	bonus.dibuja();
 	esferas.dibuja();
-	//sghe
+	//sghewtht
+
 }
 
 void Mundo::mueve()
