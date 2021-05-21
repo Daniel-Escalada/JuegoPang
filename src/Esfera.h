@@ -24,7 +24,7 @@ public:
 	void dibuja();
 	void mueve(float t);
 	//bool colision();
-
+	Vector2D getPos() { return posicion; }
 private:
 
 	float radio;

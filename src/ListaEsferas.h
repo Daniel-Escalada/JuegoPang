@@ -20,6 +20,8 @@ public:
 	void eliminar(int index);
 	void eliminar(Esfera* e);
 	Esfera* colision(Hombre h);
+	Esfera* operator [](int i);
+	int getNumero() { return numero; }
 private:
 	Esfera* lista[MAX_ESFERAS];
 	int numero;

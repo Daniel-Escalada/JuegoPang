@@ -50,6 +50,11 @@ void Mundo::mueve()
 //	Interaccion::rebote(esfera, plataforma);
 	//Interaccion::rebote(esfera, esfera2);
 
+	for (int i = 0; i < esferas.getNumero(); i++)
+		if ((esferas[i]->getPos()).y > 11)
+			esferas[i]->setColor(255, 0, 0);
+		else
+			esferas[i]->setColor(255, 255, 255);
 
 }
 
