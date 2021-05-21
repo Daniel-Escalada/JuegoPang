@@ -14,6 +14,8 @@ public:
 	void mueve(float t);
 	void rebote(Caja caja);
 	void rebote(Pared p);
+	void rebote();
+	void destruirContenido();
 
 private:
 	Esfera* lista[MAX_ESFERAS];

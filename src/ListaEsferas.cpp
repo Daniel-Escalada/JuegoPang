@@ -36,3 +36,15 @@ void ListaEsferas::rebote(Pared p)
 	for (int i = 0; i < numero; i++)
 		Interaccion::rebote(*(lista[i]), p);
 }
+void ListaEsferas::rebote()
+{
+	for (int i = 0; i < numero - 1; i++)
+		for (int j = i + 1; j < numero; j++)
+			Interaccion::rebote(*(lista[i]), *(lista[j]));
+}
+void ListaEsferas::destruirContenido()
+{
+	for (int i = 0; i < numero; i++) // destrucción de esferas contenidas
+		delete lista[i];
+	numero = 0; // inicializa lista
+}

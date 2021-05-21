@@ -39,6 +39,7 @@ void Mundo::mueve()
 	esferas.mueve(0.025f);
 	esferas.rebote(caja);
 	esferas.rebote(plataforma);
+	esferas.rebote();
 	Interaccion::rebote(hombre, caja);
 	Interaccion::rebote(esfera, caja);
 	Interaccion::rebote(esfera, plataforma);
@@ -90,4 +91,8 @@ void Mundo::teclaEspecial(unsigned char key)
 		hombre.setVel(5.0f, 0.0f);
 		break;
 	}
+}
+Mundo::~Mundo()
+{
+	esferas.destruirContenido();
 }
