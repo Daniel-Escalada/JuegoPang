@@ -9,6 +9,10 @@ ListaEsferas::ListaEsferas()
 }
 bool ListaEsferas::agregar(Esfera* e)
 {
+	for (int i = 0; i < numero; i++)
+		if (lista[i] == e)
+			return false;
+
 	if (numero < MAX_ESFERAS)
 		lista[numero++] = e; // último puesto sin rellenar
 	else
@@ -47,4 +51,22 @@ void ListaEsferas::destruirContenido()
 	for (int i = 0; i < numero; i++) // destrucción de esferas contenidas
 		delete lista[i];
 	numero = 0; // inicializa lista
+}
+void ListaEsferas::eliminar(int index)
+{
+	if ((index < 0) || (index >= numero))
+		return;
+	delete lista[index];
+	numero--;
+	for (int i = index; i < numero; i++)
+		lista[i] = lista[i + 1];
+}
+void ListaEsferas::eliminar(Esfera* e)
+{
+	for (int i = 0; i < numero; i++)
+		if (lista[i] == e)
+		{
+			eliminar(i);
+			return;
+		}
 }

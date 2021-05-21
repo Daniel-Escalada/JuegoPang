@@ -16,6 +16,8 @@ public:
 	void rebote(Pared p);
 	void rebote();
 	void destruirContenido();
+	void eliminar(int index);
+	void eliminar(Esfera* e);
 
 private:
 	Esfera* lista[MAX_ESFERAS];

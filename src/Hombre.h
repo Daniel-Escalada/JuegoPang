@@ -10,6 +10,8 @@ public:
 	void dibuja();
 	void mueve(float t);
 	void setVel(float vx, float vy);
+	float getAltura() { return altura; }
+	Vector2D getPos() { return posicion; }
 
 private:
 	float altura;

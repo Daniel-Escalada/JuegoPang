@@ -33,6 +33,17 @@ void Interaccion::rebote(Esfera& e, Caja c)
 
 }
 
+bool Interaccion::colision(Esfera e, Hombre h)
+{
+	Vector2D pos = h.getPos(); //la posicion de la base del hombre 
+	pos.y += h.getAltura() / 2.0f; //posicion del centro
+	float distancia = (e.posicion - pos).modulo();
+	if (distancia < e.radio)
+		return true;
+	return false;
+
+}
+
 void Interaccion::rebote(Esfera& esfera1, Esfera& esfera2) 
 {
 /*
