@@ -79,7 +79,21 @@ void Mundo::inicializa()
 
 void Mundo::tecla(unsigned char key)
 {
-
+	switch (key)
+	{
+	case '1':
+		esferas.agregar(new Esfera(0.5f, 0, 10));
+		break;
+	case '2':
+		esferas.agregar(new Esfera(1.0f, 0, 10));
+		break;
+	case '3':
+		esferas.agregar(new Esfera(1.5f, 0, 10));
+		break;
+	case '4':
+		esferas.agregar(new Esfera(2.0f, 0, 10));
+		break;
+	}
 }
 
 void Mundo::teclaEspecial(unsigned char key)
