@@ -2,6 +2,7 @@
 #include "Esfera.h"
 #include "Caja.h"
 #include "Pared.h"
+#include "Hombre.h"
 
 #define MAX_ESFERAS 100
 class ListaEsferas
@@ -18,7 +19,7 @@ public:
 	void destruirContenido();
 	void eliminar(int index);
 	void eliminar(Esfera* e);
-
+	Esfera* colision(Hombre h);
 private:
 	Esfera* lista[MAX_ESFERAS];
 	int numero;

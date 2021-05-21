@@ -70,3 +70,12 @@ void ListaEsferas::eliminar(Esfera* e)
 			return;
 		}
 }
+Esfera* ListaEsferas::colision(Hombre h)
+{
+	for (int i = 0; i < numero; i++)
+	{
+		if (Interaccion::colision(*(lista[i]), h))
+			return lista[i];
+	}
+	return 0; //no hay colisión
+}

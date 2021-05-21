@@ -40,6 +40,11 @@ void Mundo::mueve()
 	esferas.rebote(caja);
 	esferas.rebote(plataforma);
 	esferas.rebote();
+
+	Esfera* aux = esferas.colision(hombre);
+	if (aux != 0)//si alguna esfera ha chocado
+		esferas.eliminar(aux);
+
 	Interaccion::rebote(hombre, caja);
 //	Interaccion::rebote(esfera, caja);
 //	Interaccion::rebote(esfera, plataforma);
