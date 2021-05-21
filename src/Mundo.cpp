@@ -18,8 +18,8 @@ void Mundo::dibuja()
 			0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
 	//aqui es donde hay que poner el codigo de dibujo
-	esfera.dibuja();
-	esfera2.dibuja();
+	//esfera.dibuja();
+	//esfera2.dibuja();
 	caja.dibuja();
 	hombre.dibuja();
 	disparo.dibuja();
@@ -32,8 +32,8 @@ void Mundo::dibuja()
 void Mundo::mueve()
 {
 	hombre.mueve(0.025f);
-	esfera.mueve(0.025f);
-	esfera2.mueve(0.025f);
+//	esfera.mueve(0.025f);
+	//esfera2.mueve(0.025f);
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
@@ -41,11 +41,9 @@ void Mundo::mueve()
 	esferas.rebote(plataforma);
 	esferas.rebote();
 	Interaccion::rebote(hombre, caja);
-	Interaccion::rebote(esfera, caja);
-	Interaccion::rebote(esfera, plataforma);
-	Interaccion::rebote(esfera2, caja);
-	Interaccion::rebote(esfera2, plataforma);
-	Interaccion::rebote(esfera, esfera2);
+//	Interaccion::rebote(esfera, caja);
+//	Interaccion::rebote(esfera, plataforma);
+	//Interaccion::rebote(esfera, esfera2);
 
 
 }
@@ -55,24 +53,23 @@ void Mundo::inicializa()
 	x_ojo = 0;
 	y_ojo = 7.5;
 	z_ojo = 30;
-	esfera.setColor(0, 0, 255);
-	esfera.setRadio(1.5f);
-	esfera.setPos(2, 4);
-	esfera.setVel(5,15);
-	esfera2.setRadio(2);
-	esfera2.setPos(-2, 4);
-	esfera2.setVel(-5, 15);
+
 	bonus.setPos(5.0f, 5.0f);
 	disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);
 
 
+	Esfera* e1 = new Esfera(1, 2, 4, 5, 15); // esfera1
+	e1->setColor(200, 0, 0);
+	esferas.agregar(e1); // esfera1 a la lista
+	Esfera* e2 = new Esfera(2, -2, 4, -5, 15); // esfera2
+	e2->setColor(255, 255, 255);
+	esferas.agregar(e2); //esfera2 a la lista
 	for (int i = 0; i < 6; i++)
 	{
 		Esfera* aux = new Esfera(0.75 + i * 0.25, i, 1 + i, i, i);
 		esferas.agregar(aux);
 	}
-
 }
 
 void Mundo::tecla(unsigned char key)
