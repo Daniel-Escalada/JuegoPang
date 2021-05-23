@@ -4,6 +4,7 @@
 #include "Bonus.h"
 #include "Disparo.h"
 #include "ListaEsferas.h"
+#include "ListaDisparos.h"
 
 class Mundo
 {
@@ -30,4 +31,5 @@ private:
 	Bonus bonus;
 	Pared plataforma;
 	ListaEsferas esferas;
+	ListaDisparos disparos;
 };

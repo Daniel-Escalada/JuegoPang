@@ -26,6 +26,7 @@ void Mundo::dibuja()
 	plataforma.dibuja();
 	bonus.dibuja();
 	esferas.dibuja();
+	disparos.dibuja();
 
 }
 
@@ -37,9 +38,12 @@ void Mundo::mueve()
 	bonus.mueve(0.025f);
 	disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
+	disparos.mueve(0.025f);
 	esferas.rebote(caja);
 	esferas.rebote(plataforma);
 	esferas.rebote();
+	disparos.colision(caja);
+	disparos.colision(plataforma);
 
 	Esfera* aux = esferas.colision(hombre);
 	if (aux != 0)//si alguna esfera ha chocado
@@ -99,6 +103,14 @@ void Mundo::tecla(unsigned char key)
 	case '4':
 		esferas.agregar(new Esfera(2.0f, 0, 10));
 		break;
+	case ' ':
+	{
+		Disparo* d = new Disparo();
+		Vector2D pos = hombre.getPos();
+		d->setPos(pos.x, pos.y);
+		disparos.agregar(d);
+		break;
+	}
 	}
 }
 
@@ -117,4 +129,5 @@ void Mundo::teclaEspecial(unsigned char key)
 Mundo::~Mundo()
 {
 	esferas.destruirContenido();
+	disparos.destruirContenido();
 }

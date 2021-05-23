@@ -44,6 +44,35 @@ bool Interaccion::colision(Esfera e, Hombre h)
 
 }
 
+bool Interaccion::colision(Disparo d, Caja c)
+{
+	return colision(d, c.techo);
+	return colision(d, c.pared_izq);
+	return colision(d, c.pared_dcha);
+	return colision(d, c.suelo);
+}
+
+bool Interaccion::colision(Disparo d, Pared p)
+{
+	/*
+	Vector2D pos = d.getPos();
+	float rad = d.getRadio();
+	float dist = p.distancia(pos);
+	if ( dist < rad )
+	{
+		d.setVel(0, 0);
+		return true;
+	}
+	return false;
+	*/
+
+	Vector2D pos = d.getPos();
+	float dist = p.distancia(pos);
+	if (dist < d.getRadio())
+		return true;
+	return false;
+}
+
 void Interaccion::rebote(Esfera& esfera1, Esfera& esfera2) 
 {
 /*
