@@ -25,7 +25,7 @@ public:
 	//void mueve(float t);
 	//bool colision();
 	Vector2D getPos() { return posicion; }
-private:
+protected:
 
 	float radio;
 	ColorRGB color;

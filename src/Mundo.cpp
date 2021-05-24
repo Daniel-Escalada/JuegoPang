@@ -27,7 +27,7 @@ void Mundo::dibuja()
 	bonus.dibuja();
 	esferas.dibuja();
 	disparos.dibuja();
-
+	esferaPulsante.dibuja();
 }
 
 void Mundo::mueve()
@@ -39,11 +39,13 @@ void Mundo::mueve()
 	disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
 	disparos.mueve(0.025f);
+	esferaPulsante.mueve(0.025f);
 	esferas.rebote(caja);
 	esferas.rebote(plataforma);
 	esferas.rebote();
 	disparos.colision(caja);
 	disparos.colision(plataforma);
+
 
 	Esfera* aux = esferas.colision(hombre);
 	if (aux != 0)//si alguna esfera ha chocado
