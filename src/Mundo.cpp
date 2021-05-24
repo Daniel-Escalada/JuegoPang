@@ -28,6 +28,7 @@ void Mundo::dibuja()
 	esferas.dibuja();
 	disparos.dibuja();
 	esferaPulsante.dibuja();
+	disparoEspecial.dibuja();
 }
 
 void Mundo::mueve()
@@ -40,11 +41,16 @@ void Mundo::mueve()
 	esferas.mueve(0.025f);
 	disparos.mueve(0.025f);
 	esferaPulsante.mueve(0.025f);
+	disparoEspecial.mueve(0.025f);
+
 	esferas.rebote(caja);
 	esferas.rebote(plataforma);
 	esferas.rebote();
 	disparos.colision(caja);
 	disparos.colision(plataforma);
+
+	if(Interaccion:: colision(disparoEspecial, caja)) disparoEspecial.setVel(0.0f,0.0f);
+	if(Interaccion::colision(disparoEspecial, plataforma))disparoEspecial.setVel(0.0f, 0.0f);
 
 	Interaccion::rebote(esferaPulsante, plataforma);
 	Interaccion::rebote(esferaPulsante, caja);
@@ -80,6 +86,7 @@ void Mundo::inicializa()
 	disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);
 
+	disparoEspecial.setPos(0.0f,0.0f);
 
 	Esfera* e1 = new Esfera(1, 2, 4, 5, 15); // esfera1
 	e1->setColor(200, 0, 0);

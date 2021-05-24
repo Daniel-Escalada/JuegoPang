@@ -15,7 +15,7 @@ public:
 	float getRadio() { return radio; }
 	Vector2D getPos() { return posicion; }
 	
-private:
+protected:
 	float radio;
 	Vector2D origen;
   //  Vector2D posicion, velocidad, aceleracion;
