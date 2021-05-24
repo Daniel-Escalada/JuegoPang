@@ -46,6 +46,11 @@ void Mundo::mueve()
 	disparos.colision(caja);
 	disparos.colision(plataforma);
 
+	Interaccion::rebote(esferaPulsante, plataforma);
+	Interaccion::rebote(esferaPulsante, caja);
+	for (int i = 0; i < esferas.getNumero(); i++)
+		Interaccion::rebote(esferaPulsante, *esferas[i]);
+
 
 	Esfera* aux = esferas.colision(hombre);
 	if (aux != 0)//si alguna esfera ha chocado

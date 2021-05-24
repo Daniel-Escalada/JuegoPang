@@ -13,8 +13,9 @@ EsferaPulsante::EsferaPulsante()
 
 void EsferaPulsante::mueve(float t)
 {
-	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
-	velocidad = velocidad + aceleracion * t;
+	//posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
+	//velocidad = velocidad + aceleracion * t;
+	Esfera::mueve(t);
 	if (radio > radio_max)
 		pulso = -pulso;
 	if (radio < radio_min)
