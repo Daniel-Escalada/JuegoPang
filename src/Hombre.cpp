@@ -41,8 +41,9 @@ void Hombre::mueve(float t) {
 
 }
 */
+/*
 void Hombre::setVel(float vx, float vy)
 {
 	velocidad.x = vx;
 	velocidad.y = vy;
-}
+}*/

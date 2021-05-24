@@ -29,12 +29,13 @@ void Esfera::setColor(unsigned char r, unsigned char v, unsigned char a)
 {
 	color.set(r,v,a);
 }
+/*
 void Esfera::setPos(float ix, float iy)
 {
 	posicion.x = ix;
 	posicion.y = iy;
 }
-
+*/
 void Esfera::dibuja() {
 
 	color.ponColor();
@@ -51,8 +52,10 @@ void Esfera::mueve(float t) {
 
 }
 */
+/*
 void Esfera::setVel(float vx, float vy)
 {
 	velocidad.x = vx;
 	velocidad.y = vy;
 }
+*/

@@ -18,13 +18,13 @@ public:
 	// Radio minimo
 	void setRadio(float r);
 	// Posicion x e y
-	void setPos(float ix, float iy);
-	void setVel(float vx, float vy);
+//	void setPos(float ix, float iy);
+//	void setVel(float vx, float vy);
 
 	void dibuja();
 	//void mueve(float t);
 	//bool colision();
-	Vector2D getPos() { return posicion; }
+//	Vector2D getPos() { return posicion; }
 protected:
 
 	float radio;

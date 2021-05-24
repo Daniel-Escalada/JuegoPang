@@ -26,7 +26,7 @@ public:
 	float z_ojo;
 	
 private:
-	Disparo disparo;
+	//Disparo disparo;
 	Esfera esfera,esfera2;
 	Hombre hombre;
 	Caja caja;

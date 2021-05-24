@@ -22,7 +22,7 @@ void Mundo::dibuja()
 	//esfera2.dibuja();
 	caja.dibuja();
 	hombre.dibuja();
-	disparo.dibuja();
+	//disparo.dibuja();
 	plataforma.dibuja();
 	bonus.dibuja();
 	esferas.dibuja();
@@ -37,7 +37,7 @@ void Mundo::mueve()
 //	esfera.mueve(0.025f);
 	//esfera2.mueve(0.025f);
 	bonus.mueve(0.025f);
-	disparo.mueve(0.025f);
+	//disparo.mueve(0.025f);
 	esferas.mueve(0.025f);
 	disparos.mueve(0.025f);
 	esferaPulsante.mueve(0.025f);
@@ -83,7 +83,7 @@ void Mundo::inicializa()
 	z_ojo = 30;
 
 	bonus.setPos(5.0f, 5.0f);
-	disparo.setPos(-5.0f, 0.0f);
+	//disparo.setPos(-5.0f, 0.0f);
 	plataforma.setPos(-5.0f, 9.0f, 5.0f, 9.0f, 10.0f, -10.0f);
 
 	disparoEspecial.setPos(0.0f,0.0f);
@@ -99,6 +99,9 @@ void Mundo::inicializa()
 		Esfera* aux = new Esfera(0.75 + i * 0.25, i, 1 + i, i, i);
 		esferas.agregar(aux);
 	}
+
+	disparoEspecial.setPos(-5.0f, 0, -5.0f, 0);
+
 }
 
 void Mundo::tecla(unsigned char key)
@@ -121,7 +124,7 @@ void Mundo::tecla(unsigned char key)
 	{
 		Disparo* d = new Disparo();
 		Vector2D pos = hombre.getPos();
-		d->setPos(pos.x, pos.y);
+		d->setPos(pos.x, pos.y, pos.x, pos.y); //sobrecargado para incluir origen
 		disparos.agregar(d);
 		break;
 	}

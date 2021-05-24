@@ -8,8 +8,8 @@ Disparo::Disparo()
 	radio = 0.25f;
 	aceleracion.y = aceleracion.x = 0;
 	velocidad.y = 10.0f;
-	origen.x = 5.0f;
-	origen.y = 0.3f;
+	//origen.x = 5.0f;
+	//origen.y = 0.3f;
 	estela.setColor(0, 255, 255);
 
 }
@@ -52,6 +52,7 @@ void Disparo::mueve(float t) {
 
 }
 */
+/*
 void Disparo::setPos(float ix, float iy) {
 	posicion.x = origen.x = ix;
 	posicion.y = origen.y = iy;
@@ -62,3 +63,4 @@ void Disparo::setVel(float vx, float vy) {
 	velocidad.y  = vy;
 
 }
+*/
