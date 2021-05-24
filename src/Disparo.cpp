@@ -43,7 +43,7 @@ void Disparo::dibuja() {
 	*/
 	//fin estela
 }
-
+/*
 void Disparo::mueve(float t) {
 
 	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
@@ -51,7 +51,7 @@ void Disparo::mueve(float t) {
 
 
 }
-
+*/
 void Disparo::setPos(float ix, float iy) {
 	posicion.x = origen.x = ix;
 	posicion.y = origen.y = iy;

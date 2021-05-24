@@ -2,9 +2,9 @@
 
 #include "Vector2D.h"
 #include "ColorRGB.h"
+#include "ObjetoMovil.h"
 
-
-class Esfera
+class Esfera :public ObjetoMovil
 {
 
 	friend class Interaccion;
@@ -22,13 +22,13 @@ public:
 	void setVel(float vx, float vy);
 
 	void dibuja();
-	void mueve(float t);
+	//void mueve(float t);
 	//bool colision();
 	Vector2D getPos() { return posicion; }
 private:
 
 	float radio;
 	ColorRGB color;
-	Vector2D posicion, velocidad, aceleracion;
+	// Vector2D posicion, velocidad, aceleracion;
 };
 

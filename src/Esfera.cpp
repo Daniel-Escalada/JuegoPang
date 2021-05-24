@@ -43,14 +43,14 @@ void Esfera::dibuja() {
 	glTranslatef(-posicion.x, -posicion.y, 0);
 
 }
-
+/*
 void Esfera::mueve(float t) {
 
 	posicion = posicion + velocidad * t + aceleracion * (0.5f * t * t);
 	velocidad = velocidad + aceleracion * t;
 
 }
-
+*/
 void Esfera::setVel(float vx, float vy)
 {
 	velocidad.x = vx;
